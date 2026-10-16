@@ -9,7 +9,7 @@
 <style>
     body {
         font-family: Arial, sans-serif;
-        
+
     }
 
     * {
@@ -113,7 +113,7 @@
         background-color: white;
     }
 
-    .category h1{
+    .category h1 {
         margin-bottom: 20px;
     }
 
@@ -131,7 +131,7 @@
         justify-content: space-between;
     }
 
-    .fruit-box{
+    .fruit-box {
         font-size: 40px;
         display: flex;
         justify-content: center;
@@ -141,13 +141,118 @@
     .cat-container p {
         text-align: center;
     }
-    main{
+
+    main {
         padding-top: 70px;
         background-color: rgb(243, 243, 243);
     }
 
-    .dummy{
-        height: 100vh;
+    .products-container {
+        padding: 60px;
+    }
+
+    .item-card {
+        border: 1px solid lightgrey;
+        height: 280px;
+        width: 250px;
+        border-radius: 10px;
+        background-color: white;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .item-img {
+        background-color: rgb(215, 215, 215);
+        font-size: 70px;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+    }
+
+    .item-card p {
+        font-size: 20px;
+    }
+
+    .item-name {
+        font-weight: 600;
+    }
+
+    .item-price {
+        color: green;
+        font-weight: 600;
+    }
+
+    .product-item-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        row-gap: 30px;
+    }
+
+    .products-container h1 {
+        margin-bottom: 20px;
+    }
+
+
+    
+
+
+    .red {
+        background-color: red;
+        opacity: 0.8 ;
+        /* z-index: 200; */
+        /* position: relative; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+    }
+
+    .green {
+
+        height: 180px;
+        width: 180px;
+        background-color: green;
+        z-index: 1;
+        /* z-index: 1; */
+
+    }
+
+    .container{
+        height: 200px;
+        width: 200px;
+        border: 2px solid green;
+        margin: 50px 20px;
+        position: relative;
+    }
+
+    .box{
+        border: 1px solid black;
+        height: 100px ;
+        width: 100px;
+        position: absolute;
+    }
+    .one{
+        background-color: #b7e4c7;
+        height: 130px;
+        z-index: 2;
+    }
+
+    .two{
+        background-color: red;
+        z-index: 10;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 </style>
 
@@ -211,8 +316,102 @@
 
         </div>
 
-        <div class="dummy"></div>
+        <div class="products-container">
+            <h1>Popular Products</h1>
+            <div class="product-item-container">
+                <div class="item-card">
+                    <div class="item-img">
+                        🍎
+                    </div>
+                    <p class="item-name">Fresh Apples</p>
+                    <p class="item-price">₹120 / kg</p>
+                </div>
+                <div class="item-card">
+                    <div class="item-img">
+                        🍎
+                    </div>
+                    <p class="item-name">Fresh Apples</p>
+                    <p class="item-price">₹120 / kg</p>
+                </div>
+                <div class="item-card">
+                    <div class="item-img">
+                        🍎
+                    </div>
+                    <p class="item-name">Fresh Apples</p>
+                    <p class="item-price">₹120 / kg</p>
+                </div>
+                <div class="item-card">
+                    <div class="item-img">
+                        🍎
+                    </div>
+                    <p class="item-name">Fresh Apples</p>
+                    <p class="item-price">₹120 / kg</p>
+                </div>
+                <div class="item-card">
+                    <div class="item-img">
+                        🍎
+                    </div>
+                    <p class="item-name">Fresh Apples</p>
+                    <p class="item-price">₹120 / kg</p>
+                </div>
+                <div class="item-card">
+                    <div class="item-img">
+                        🍎
+                    </div>
+                    <p class="item-name">Fresh Apples</p>
+                    <p class="item-price">₹120 / kg</p>
+                </div>
+                <div class="item-card">
+                    <div class="item-img">
+                        🍎
+                    </div>
+                    <p class="item-name">Fresh Apples</p>
+                    <p class="item-price">₹120 / kg</p>
+                </div>
+                <div class="item-card">
+                    <div class="item-img">
+                        🍎
+                    </div>
+                    <p class="item-name">Fresh Apples</p>
+                    <p class="item-price">₹120 / kg</p>
+                </div>
+                <div class="item-card">
+                    <div class="item-img">
+                        🍎
+                    </div>
+                    <p class="item-name">Fresh Apples</p>
+                    <p class="item-price">₹120 / kg</p>
+                </div>
+                <div class="item-card">
+                    <div class="item-img">
+                        🍎
+                    </div>
+                    <p class="item-name">Fresh Apples</p>
+                    <p class="item-price">₹120 / kg</p>
+                </div>
+                <div class="item-card">
+                    <div class="item-img">
+                        🍎
+                    </div>
+                    <p class="item-name">Fresh Apples</p>
+                    <p class="item-price">₹120 / kg</p>
+                </div>
+                <div class="item-card">
+                    <div class="item-img">
+                        🍎
+                    </div>
+                    <p class="item-name">Fresh Apples</p>
+                    <p class="item-price">₹120 / kg</p>
+                </div>
+            </div>
+
+        </div>
     </main>
+    <footer>
+        <p>FreshMart © 2026 | CSS Position Practice</p>
+    </footer>
+
+    
 
 </body>
 
